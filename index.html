@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding:0;
+			margin:0;
+		}
+		body{
+			font-family: "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+		}
+		.text-editor-wrap{
+			display: block;
+			margin:auto;
+			border-radius: 10px;
+			box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 70px;
+			max-width: 530px;
+			overflow: hidden;
+			/*margin-top: 120px;*/
+		}
+		.title-bar{
+			padding: 5px 0;
+			font-size: 15px;
+			text-align: center;
+			text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;
+			background-color: #f8f8f8;
+			background-image: -webkit-linear-gradient(top, #e8e8e8, #bcbbbc);
+			box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
+			border-bottom: #6a6a6a 1px solid;
+		}
+		.text-body{
+			height: 120px;
+			background-color: rgba(0, 0, 0, 0.85);
+			padding: 10px;
+			color: #f0f0f0;
+			text-shadow: #000 0px 1px 0px;
+			font-family: "Consolas", "Courier New", "Courier";
+			font-size: 1.75em;
+			line-height: 1.40em;
+			font-weight: 500;
+			text-align: left;
+			overflow: hidden;
+			-webkit-transition: all 0.5s ease-out;
+			-moz-transition: all 0.5s ease-out;
+			-ms-transition: all 0.5s ease-out;
+			-o-transition: all 0.5s ease-out;
+			transition: all 0.5s ease-out;
+		}
+	</style>
+</head>
+<body>
+	<div class="text-editor-wrap">
+		<div class="title-bar">
+			type writer
+		</div>
+		<div class="text-body">
+			<div class='typed'></div>
+			<div class='typed'></div>
+			<div class='typed'></div>
+			<!-- <span class="typed-cursor">|</span> -->
+		</div>
+	</div>
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script src="./jquery.typewriter.js"></script>
+	<script>
+		$('.typed').typewriter({
+			//str_arr:['Big Nut','&','God Gong'],
+			delay:100
+		});
+	</script>
+</body>
+</html>
